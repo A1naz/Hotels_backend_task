@@ -9,7 +9,6 @@ class GenreController {
       res.send(genres.rows);
     } else {
       const genres = await db.query('SELECT * FROM genre');
-      console.log(genres);
       res.send(genres.rows);
     }
   }
